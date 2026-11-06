@@ -1,0 +1,14 @@
+SEED = 42
+N_PER_DATASET = {"hotpotqa": 100, "arcd": 100, "musique": 200}
+DATASETS = list(N_PER_DATASET)
+TOP_K = 5
+CHUNK_SIZE = 200
+CHUNK_OVERLAP = 40
+EMBED_MODEL = "all-MiniLM-L6-v2"
+EMBED_MODELS = {"arcd": "paraphrase-multilingual-MiniLM-L12-v2"}
+LLM_MODEL = "qwen3:8b"
+NUM_CTX = 6144
+TEMPERATURE = 0.0
+MAX_AGENT_STEPS = 4
+CANDIDATES_PER_STEP = 6
+RESULTS_CSV = "results.csv"
